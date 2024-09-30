@@ -5,7 +5,6 @@ I didn't like SQL Until..
 I solved these 20 Leetcode questions.
 
 
-4. Customers who never order : https://lnkd.in/dPZPAKFf
 5. Delete duplicate emails: https://lnkd.in/dEKnD9s3
 6. Rising temperature: https://lnkd.in/dyZvVYvP
 7. Employee bonus: https://Inkd.in/d9iTXt-V

@@ -1,7 +1,6 @@
 -- 1. Combine two tables: https://lnkd.in/dumdCXC7
 
 Table: Person
-
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -14,7 +13,6 @@ This table contains information about the ID of some persons and their first and
  
 
 Table: Address
-
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+

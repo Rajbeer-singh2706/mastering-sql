@@ -1,6 +1,7 @@
 # 3. Top N per Group
 # sales(product_id, salesperson_id, sales_amount)
 # Write a SQL query to find the top 3 sales amounts for each `salesperson_id`.
+
 '''
 SELECT
          salesperson_id,

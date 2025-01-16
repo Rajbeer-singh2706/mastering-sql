@@ -1,10 +1,9 @@
-2. Employees earning > managers
+-- 2. Employees earning > managers
 
 https://leetcode.com/problems/employees-earning-more-than-their-managers/description/
 
 
 Table: Employee
-
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -54,5 +53,5 @@ JOIN EMPLOYEE mgr
 -- # 1. Alias first table with another 
 -- # 2. Then assume there are two table exits ,
 ---# 3. Then think how you are going to solve that problems
--- # 4. Image same table as two table 
+-- # 4. Imagin same table as two table 
 --- # For Example 1 as employee 1 as managers

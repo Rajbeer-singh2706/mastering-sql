@@ -1,4 +1,4 @@
-3. Duplicate emails:https://leetcode.com/problems/duplicate-emails/description/
+-- 3. Duplicate emails:https://leetcode.com/problems/duplicate-emails/description/
 
 +-------------+---------+
 | Column Name | Type    |
@@ -8,7 +8,8 @@
 +-------------+---------+
 id is the primary key (column with unique values) for this table.
 Each row of this table contains an email. The emails will not contain uppercase letters.
-Write a solution to report all the duplicate emails. Note that its guaranteed that the email field is not NULL.
+
+-- Write a solution to report all the duplicate emails. Note that its guaranteed that the email field is not NULL.
 Return the result table in any order.
 The result format is in the following example.
 
@@ -66,7 +67,7 @@ SELECT
 
 FROM (SELECT 
    *,
-   ROW_NUMBER() OVER(PARTITIOn BY email) as RNK
+   ROW_NUMBER() OVER(PARTITION BY email) as RNK
 FROM PERSON 
 ) X 
 WHERE X.RNK = 2

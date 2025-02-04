@@ -1,0 +1,1 @@
+# 8. Explain how you would handle NULL values in JOIN operations in SQL?

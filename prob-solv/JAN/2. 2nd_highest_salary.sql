@@ -1,5 +1,5 @@
--- Coding Ninjas
 
+---- ####### Solution 1 ########
 select 
     salary
 FROM
@@ -11,27 +11,27 @@ FROM
 ) as X where X.rank = 2;
 
 
-#
+----- ###### Solution 2 #######
 select 
     distinct salary 
 from employee order by salary desc limit 1 offset 1
--- 
-salary 
-100
-200
-300
 
--> salary desc 
-300 offset 0 
-200 offset 1
-100 offset 2
+-- salary 
+-- 100
+-- 200
+-- 300
 
--> limit 1 offset 1 -> 200 
-_> limit 2 offset 0 -> return 2 records which start from 0 , result, 300,200
--> limit 2 offset 1 -> return 2 records which start from 1 , result , 200,100
+-- salary desc 
+-- 300 offset 0 
+-- 200 offset 1
+-- 100 offset 2
 
-LIMIT 1 OFFSET 1: This combination limits the result to only one row (the second-highest salary). 
-The OFFSET 1 skips the first row (highest salary), and LIMIT 1 limits the result to one row.
+--> limit 1 offset 1 -> 200 
+--> limit 2 offset 0 -> return 2 records which start from 0 , result, 300,200
+--> limit 2 offset 1 -> return 2 records which start from 1 , result , 200,100
+
+-- LIMIT 1 OFFSET 1: This combination limits the result to only one row (the second-highest salary). 
+-- The OFFSET 1 skips the first row (highest salary), and LIMIT 1 limits the result to one row.
 
 
 -- ### APPROACH 3 : SUBQUERY 
@@ -91,4 +91,3 @@ FROM (
         FROM EMPLOYEE 
 )
 WHERE DR=2
-

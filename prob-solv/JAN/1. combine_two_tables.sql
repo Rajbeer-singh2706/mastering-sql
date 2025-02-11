@@ -64,8 +64,9 @@ addressId = 1 contains information about the address of personId = 2.
 SELECT
    firstName,
    lastName,
-    city,
-    state   
+   city,
+   state   
+
 FROM person p 
 LEFT JOIN address s
   ON p.person_id = s.person_id 
